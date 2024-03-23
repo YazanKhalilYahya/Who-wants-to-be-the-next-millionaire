@@ -1,0 +1,232 @@
+body {
+  background-image: -webkit-image-set("img/background.jpg");
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 120px 1fr;
+  gap: 20px;
+}
+
+h1 {
+  grid-row: span 1;
+  grid-column: 2;
+  text-align: center;
+  color: #dff5ff;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 80px;
+}
+
+.start-menu {
+  background-image: -webkit-image-set("img/bg.jpg");
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 10px 10px 5px white;
+  grid-column: 2;
+  grid-row: 2;
+  padding-top: 0;
+
+  /*margin-top: 50px;
+  margin-left: 380px;
+  margin-bottom: 100px;
+  justify-content: center;*/
+}
+
+.start-menu .message,
+.restart {
+  color: #dff5ff;
+  font-size: 15px;
+  font-weight: bold;
+  display: none;
+}
+.start-menu .request {
+  color: #dff5ff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.start-menu .choose-price-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.start-menu .choose-price-container .price-btn {
+  color: white;
+  background: black;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #124076;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+.start-btn {
+  color: white;
+  background: black;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #124076;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.start-menu .choose-price-container .price-btn:hover,
+.start-btn:hover {
+  background-color: orange;
+  color: black;
+  padding: 9px 21px 9px 20px;
+}
+
+.container {
+  background-image: -webkit-image-set("img/bg.jpg");
+  background-size: cover;
+  color: #dff5ff;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 10px 10px 5px white;
+  /*justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 350px;*/
+  grid-row: 2;
+  grid-column: 2;
+  display: none;
+}
+
+.container .winning {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.container .questions .question-text {
+  text-align: center;
+  font-family: 15px;
+  background: black;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #124076;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container .questions .answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container .questions .answers .btn,
+.tools button,
+.extra-btns button {
+  color: white;
+  background: black;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #124076;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.container .questions .answers .btn:hover,
+.tools button:hover,
+.extra-btns button:hover {
+  background: orange;
+}
+
+.container .questions .tools {
+  margin-bottom: 10px;
+}
+
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: white;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+
+.incorrect {
+  background-color: #ff9393;
+}
+
+.help {
+  color: #dff5ff;
+  font-size: 20px;
+  display: none;
+}
+
+.money-list {
+  grid-column: 3;
+  grid-row: 2;
+  color: white;
+  background-color: black;
+  width: 80px;
+  height: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  border: 3px solid #124076;
+  border-radius: 8px;
+}
+
+.section {
+  background-image: -webkit-image-set("img/bg.jpg");
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  grid-row: 2;
+  grid-column: 2;
+  text-align: center;
+  display: none;
+}
+
+.section .final-message {
+  color: #dff5ff;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.section .restart-btn {
+  color: white;
+  background: black;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #124076;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+}
